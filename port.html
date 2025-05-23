@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
+
+    <!-- bootstrap css cdn link  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+
+    <!-- custom css file -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- bootstrap icon cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
+    />
+
+    <!-- for adding animation to website we have use AOS library 
+    AOS Library css file cdn link -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- jquery cdn link  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  </head>
+  <body>
+    <!-- navbar starts -->
+    <nav
+      id="navbar-top"
+      class="navbar navbar-expand-lg navbar-light bg-white sticky-top"
+    >
+      <div class="container-fluid px-5">
+        <a class="navbar-brand fw-bold fs-2" href="#" style="color: #3f396d"
+          >Portfolio</a
+        >
+        <button
+          class="nav-menu d-md-none"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <i class="bi bi-menu-button-fill"></i>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav gap-4" style="font-size: 1.1rem">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#service">Service</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
+          
+            <li class="nav-item">
+              <a class="nav-link" href="#blog">Blog</a>
+            </li>
+          </ul>
+        </div>
+        <button class="c-btn ms-4 py-2 px-4 rounded-pill d-none d-md-block">Contact</button>
+      </div>
+    </nav>
+    <!-- navbar ends here -->
+
+    <!-- home section starts  -->
+   <section class="home pt-5 pb-5" id="home">
+  <div class="row justify-content-evenly align-middle">
+    <!-- here data-aos is used for adding aos animation  -->
+    <div class="col-10 col-md-6 text-center text-md-start" data-aos="slide-right">
+      <h2 style="color: #3f396d">
+        Hello! I Am <br /><span class="c-orange">Himanshu Arya</span>
+      </h2>
+      <p class="text-muted">
+        "I am a passionate Full Stack Web Developer skilled in creating fully responsive websites and robust backend systems. As a fresher, I bring strong project experience, technical knowledge, and a commitment to delivering high-quality web solutions.
+      </p>
+
+      <!-- Updated button as link to resume -->
+      <a href="https://drive.google.com/file/d/1TxQpT91kOPrz5Lzg87tcvnnwBFMS8OZm/view?usp=sharing" target="_blank" class="c-btn h-btn mt-3 py-3 px-5 rounded-pill text-decoration-none">
+        Hire Me
+      </a>
+
+      <a href="" class="link ms-4 d-none">See My Work</a>
+    </div>
+
+    <div class="col-10 col-md-4 d-none d-md-block">
+      <img src="image.jpg" class="img-fluid" alt="" />
+    </div>
+  </div>
+</section>
+
+    <!-- home section ends here -->
+
+    <!-- expertise section starts -->
+    <section class="expertise mt-5" id="service">
+      <div class="heading text-center">
+        <small>My Expertise</small>
+        <h3>
+          Provide Wide Range of <br />
+          Digital Services
+        </h3>
+      </div>
+      <div class="row justify-content-evenly mt-5">
+        <div class="col-10 col-md-4" data-aos="fade-up">
+          <div class="service-card">
+            <div class="img">
+              <img
+                src="Certificate.png"
+                class="certificate-img"
+                alt=""
+              />
+            </div>
+            <div class="content mt-3">
+              <h4>Full Stack Development</h4>
+              <p class="text-muted">
+              Successfully completed Full Stack Development Internship at ACITEC, showcasing proficiency in frontend and backend technologies.
+      
+              </p>
+              <a href="" class="link">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-10" data-aos="fade-up">
+          <div class="service-card">
+            <div class="img">
+              <img
+                src="Certificate .png"
+                class="certificate-img"
+                alt=""
+              />
+            </div>
+            <div class="content mt-3">
+              <h4>MySQL Database</h4>
+              <p class="text-muted">
+                Completed hands-on training in MySQL, covering database design, CRUD operations, joins, indexing, and optimization techniques.
+              </p>
+              <a href="" class="link">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-10" data-aos="fade-up">
+          <div class="service-card">
+            <div class="img">
+              <img
+                src="BigData.png"
+                class="certificate-img"
+                alt=""
+              />
+            </div>
+            <div class="content mt-3">
+              <h4>NPTEL Big Data Certificate</h4>
+              <p class="text-muted">
+                      Successfully completed NPTEL’s Big Data Computing course, gaining knowledge of Hadoop, Spark, MapReduce, and large-scale data processing systems.
+              </p>
+              <a href="" class="link">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- expertise section ends here -->
+
+   <!-- Skill Section Starts -->
+<section class="skill mt-5 py-5" id="about">
+  <div class="container">
+    <div class="row justify-content-evenly">
+      <!-- HTML & CSS -->
+      <div class="col-10 col-md-6 col-lg-3 mt-4">
+        <div class="progress-card">
+          <div class="circular-progress html-css">
+            <span class="progress-value html-progress">0%</span>
+          </div>
+          <br />
+          <span class="text">HTML & CSS</span>
+        </div>
+      </div>
+
+      <!-- JavaScript -->
+      <div class="col-10 col-md-6 col-lg-3 mt-4">
+        <div class="progress-card">
+          <div class="circular-progress javascript">
+            <span class="progress-value javascript-progress">0%</span>
+          </div>
+          <br />
+          <span class="text">JavaScript</span>
+        </div>
+      </div>
+
+      <!-- ReactJS -->
+      <div class="col-10 col-md-6 col-lg-3 mt-4">
+        <div class="progress-card">
+          <div class="circular-progress reactjs">
+            <span class="progress-value reactjs-progress">0%</span>
+          </div>
+          <br />
+          <span class="text">ReactJS</span>
+        </div>
+      </div>
+
+      <!-- Node.js -->
+      <div class="col-10 col-md-6 col-lg-3 mt-4">
+        <div class="progress-card">
+          <div class="circular-progress nodejs">
+            <span class="progress-value nodejs-progress">0%</span>
+          </div>
+          <br />
+          <span class="text">Node.js</span>
+        </div>
+      </div>
+
+      <!-- Express.js -->
+      <div class="col-10 col-md-6 col-lg-3 mt-4">
+        <div class="progress-card">
+          <div class="circular-progress expressjs">
+            <span class="progress-value expressjs-progress">0%</span>
+          </div>
+          <br />
+          <span class="text">Express.js</span>
+        </div>
+      </div>
+
+      <!-- MongoDB -->
+      <div class="col-10 col-md-6 col-lg-3 mt-4">
+        <div class="progress-card">
+          <div class="circular-progress mongodb">
+            <span class="progress-value mongodb-progress">0%</span>
+          </div>
+          <br />
+          <span class="text">MongoDB</span>
+        </div>
+      </div>
+
+      <!-- MySQL -->
+      <div class="col-10 col-md-6 col-lg-3 mt-4">
+        <div class="progress-card">
+          <div class="circular-progress mysql">
+            <span class="progress-value mysql-progress">0%</span>
+          </div>
+          <br />
+          <span class="text">MySQL</span>
+        </div>
+      </div>
+
+      <!-- Figma -->
+      <div class="col-10 col-md-6 col-lg-3 mt-4">
+        <div class="progress-card">
+          <div class="circular-progress figma">
+            <span class="progress-value figma-progress">0%</span>
+          </div>
+          <br />
+          <span class="text">Figma</span>
+        </div>
+      </div>
+
+      <!-- DSA -->
+      <div class="col-10 col-md-6 col-lg-3 mt-4">
+        <div class="progress-card">
+          <div class="circular-progress dsa">
+            <span class="progress-value dsa-progress">0%</span>
+          </div>
+          <br />
+          <span class="text">DSA</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+        <div class="col-10 col-md-5 skill-detail" data-aos="slide-left">
+          <div class="heading mt-5 mt-md-3">
+            <small>My Skills</small>
+            <h3>Beautiful & Unique Digital Experiences</h3>
+            <p class="text-muted">
+              I’m a passionate Full Stack Developer skilled in building complete web applications using modern technologies like HTML, CSS, JavaScript, React, Node.js, Express.js, and MongoDB. I specialize in creating responsive UIs and robust backend systems.
+            </p>
+            <p class="text-muted">
+            With a keen eye for design and a solid understanding of databases and APIs, I deliver seamless and interactive user experiences. I love turning ideas into real-world applications that solve problems and add value.
+    </p>
+            </p>
+            <button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">
+              <!-- here download attribute is used for adding download functionality to button  -->
+              <a
+                href="https://drive.google.com/file/d/1TxQpT91kOPrz5Lzg87tcvnnwBFMS8OZm/view?usp=sharing"
+                download="SampleCV"
+                style="text-decoration: none;color: #fff;"
+                >Download CV</a
+              >
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- skill section end here -->
+
+    <!-- portfolio section starts here -->
+    <section class="portfolio" id="portfolio">
+      <div class="heading text-center pt-5">
+        <small>Creative Work</small>
+        <h3>Check My Portfolio</h3>
+      </div>
+
+      <div id="myBtnContainer" class="text-center mt-4">
+        <!-- here we will create custom attribute using data- for filtering -->
+        <button class="filter-item" data-filter="all">All</button>
+        <button class="filter-item" data-filter="game">Game</button>
+        <button class="filter-item" data-filter="webapp">Web App</button>
+        <button class="filter-item" data-filter="website">Website</button>
+        <button class="filter-item" data-filter="brand">Brand</button>
+      </div>
+      <div class="portfolio-body">
+        <div class="row justify-content-evenly px-4">
+          <div class="post col-md-4 game all col-10 mt-3 mt-md-0" data-aos="fade-up">
+            <div class="card">
+              <img src="Count.png" class="card-img-top" alt="..." />
+              <div class="card-body text-center">
+                <h4 class="card-title">CountDown-Timer</h4>
+                <span class="badge bg-secondary badge-pill">HTML&CSS</span>
+                <span class="badge bg-secondary badge-pill">JavaScript</span>
+                <span class="badge bg-secondary badge-pill mb-2">Game</span
+                ><br />
+                <a href="https://github.com/himanshu123arya/CountDown-Timer" class="link">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="post col-md-4 website all col-10 mt-3 mt-md-0" data-aos="fade-up">
+            <div class="card">
+              <img
+                src="Ecommerece.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body text-center">
+                <h4 class="card-title">E-commerce Project</h4>
+                <span class="badge bg-secondary badge-pill">Nodejs&Expressjs</span>
+                <span class="badge bg-secondary badge-pill">React&Mongodb</span>
+                <span class="badge bg-secondary badge-pill mb-2">Website</span
+                ><br />
+                <a href="https://github.com/himanshu123arya/Ecommerece-Project" class="read-more-btn link">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="post col-md-4 webapp all col-10 mt-3 mt-md-0" data-aos="fade-up">
+            <div class="card">
+              <img src="BMI.png" class="card-img-top" alt="..." />
+              <div class="card-body text-center">
+                <h4 class="card-title">BMI Calculator</h4>
+                <span class="badge bg-secondary badge-pill">HTML&CSS</span>
+                <span class="badge bg-secondary badge-pill">JavaScript</span>
+                <span class="badge bg-secondary badge-pill mb-2">WebApp</span
+                ><br />
+                <a href="https://github.com/himanshu123arya/BMI-CALCULATOR" class="read-more-btn link">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-evenly mt-4 px-4">
+          <div class="post col-md-4 game all col-10 mt-3 mt-md-0" data-aos="fade-up">
+            <div class="card">
+              <img src="image.png" class="card-img-top" alt="..." />
+              <div class="card-body text-center">
+                <h4 class="card-title">Age Calculator</h4>
+                <span class="badge bg-secondary badge-pill">HTML&CSS</span>
+                <span class="badge bg-secondary badge-pill">JavaScript</span>
+                <span class="badge bg-secondary badge-pill mb-2">App</span
+                ><br />
+                <a href="https://github.com/himanshu123arya/Age-Calculator" class="read-more-btn link">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="post col-md-4 website all col-10 mt-3 mt-md-0" data-aos="fade-up">
+            <div class="card">
+              <img src="Social.jpeg" class="card-img-top" alt="..." />
+              <div class="card-body text-center">
+                <h4 class="card-title">Social Media App</h4>
+                <span class="badge bg-secondary badge-pill">Nodejs&Express</span>
+                <span class="badge bg-secondary badge-pill">React&MonoDb</span>
+                <span class="badge bg-secondary badge-pill mb-2">Game</span
+                ><br />
+                <a href="https://github.com/himanshu123arya/Social-Media-Aap-Project-" class="read-more-btn link">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="post col-md-4 all col-10 mt-3 mt-md-0" data-aos="fade-up">
+            <div class="card">
+              <img
+                src="Payment.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body text-center">
+                <h4 class="card-title">Payment </h4>
+                <span class="badge bg-secondary badge-pill">HTML&CSS</span>
+                <span class="badge bg-secondary badge-pill">JavaScript</span>
+                <span class="badge bg-secondary badge-pill mb-2">Web App</span
+                ><br />
+                <a href="https://github.com/himanshu123arya/Payment" class="read-more-btn link">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- portfolio section ends here -->
+
+    <!-- testimonial section starts  -->
+   
+    <!-- blog section starts -->
+    <section class="blog mt-5 pb-5" id="blog">
+      <div class="heading text-center pt-5">
+        <small>Latest News</small>
+        <h3>Blog & Articles</h3>
+      </div>
+      <div class="row justify-content-evenly px-4 mt-4" data-aos="fade-up">
+        <div class="blogpost col-md-4 col-10 mt-2 mt-md-0 game all">
+          <div class="card">
+            <img
+              src="sindor.jpg"
+              class="card-img-top rounded-4"
+              alt="..."
+            />
+            <div class="card-body px-4">
+              <small>Himanshu Arya</small
+              ><span class="ms-3">May 7,2025</span>
+              <h4 class="card-title">
+                <a href="https://www.mea.gov.in/Speeches-Statements.htm?dtl/39473"> Operation Sindoori: A Humanitarian Rescue Mission</a>
+              </h4>
+              <p class="text-muted">
+Operation Sindoori rescued stranded Indians from a conflict zone. Indian forces bravely ensured their safe return through a high-risk, precise mission.
+              </p>
+              <a href="#" class="read-more-btn link" data-bs-toggle="modal" data-bs-target="#exampleModal1">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="blogpost col-md-4 col-10 mt-5 mt-md-0 website all">
+          <div class="card">
+            <img
+              src="Surgical Strike.jpg"
+              class="card-img-top rounded-4"
+              alt="..."
+            />
+            <div class="card-body px-4">
+              <small>Himanshu Arya</small
+              ><span class="ms-3">Sept 29,2016</span>
+              <h4 class="card-title">
+                <a href="">Surgical Strike</a>
+              </h4>
+              <p class="text-muted">
+           Operation Surgical Strike was a precise, covert mission where Indian commandos targeted terrorist camps across the LoC, eliminating threats and ensuring national security with courage and strategic excellence.
+              </p>
+              <a href="#" class="read-more-btn link" data-bs-toggle="modal" data-bs-target="#exampleModal2">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="blogpost col-md-4 col-10 mt-5 mt-md-0 webapp all">
+          <div class="card">
+            <img
+              src="operation-blue-star.avif"
+              class="card-img-top rounded-4"
+              alt="..."
+            />
+            <div class="card-body px-4">
+              <small>Himanshu Arya</small
+              ><span class="ms-3"> 8,2022</span>
+              <h4 class="card-title">
+                <a href="">Operation Blue Star</a>
+              </h4>
+              <p class="text-muted">
+             Operation Blue Star was a 1984 Indian Army mission to remove militants from the Golden Temple in Amritsar, aiming to end separatist violence but resulting in heavy casualties and lasting controversy.
+              </p>
+              <a href="#" class="read-more-btn link" data-bs-toggle="modal" data-bs-target="#exampleModal3">Read More</a>
+            </div>
+          </div>
+        </div>
+        <!-- here we will make modals if Read more link is clicked the modal will popup -->
+        <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              
+                <button type="button" class="btn-c rounded-pill" data-bs-dismiss="modal"><i class="bi bi-x-circle-fill"></i></button>
+              
+              <div class="modal-body px-4">
+                <div class="img">
+                  <img src="sindor.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="content mt-3">
+                  <small>Himanshu Arya</small
+                    ><span class="text-muted ms-2">May 7 ,2025</span>
+                  <h4 class="card-title mt-3">Operation Sindoori: A Humanitarian Rescue Mission</h4>
+                  <div class="social-links mt-4">
+                      <button href="" class="rounded-pill dribble">
+                        <i class="bi bi-dribbble"></i>
+                      </button>
+                      <button href="" class="rounded-pill whatsapp">
+                        <i class="bi bi-whatsapp"></i>
+                      </button>
+                      <button href="" class="rounded-pill behance">
+                        <i class="bi bi-behance"></i>
+                      </button>
+                  </div>
+                  <p class="text-muted mt-3">As you are all aware, on April 22, 2025, Pakistani and Pakistan-trained terrorists belonging to the Lashkar-e-Taiba carried out a savage attack on Indian tourists at Pahalgam in Jammu & Kashmir in India. They murdered 26 people, including one national of Nepal, causing the largest number of civilian casualties in a terrorist attack in India since the 26th November 2008 attacks in Mumbai.
+The attack in Pahalgam was marked by extreme barbarity, with the victims mostly killed with head-shots from close range and in front of their families. Family members were deliberately traumatized through the manner of the killing, accompanied by the exhortation that they should take back the message.
+The attack was clearly driven by the objective of undermining the normalcy returning to Jammu & Kashmir. In particular, it was designed to impact the mainstay of the economy, tourism, with a record 23 million tourists visiting the valley last year. The calculation, presumably, was that harming growth and development in the Union Territory would help keep it backward and create fertile ground for continued cross-border terrorism from Pakistan.
+The manner of the attack was also driven by an objective of provoking communal discord, both in Jammu and Kashmir and the rest of the Nation. It is to the credit of the government and the people of India that these designs were foiled.
+A group calling itself The Resistance Front (TRF) has claimed responsibility for the attack. This group is a front for the UN-proscribed Pakistani terrorist group, Lashkar-e-Taiba. It is notable that India had given inputs about the TRF in the half-yearly report to the Monitoring Team of the UN's 1267 Sanctions Committee in May and November 2024, bringing out its role as a cover for Pakistan-based terrorist groups. Earlier too, in December 2023, India had informed the monitoring team about LeT and Jaish-e-Mohammad operating through small terror groups such as the TRF. Pakistan's pressure to remove references to TRF in the April 25 UN Security Council Press Statement is notable in this regard.
+Investigations into the Pahalgam terror attack have brought out the communication nodes of terrorists in and to Pakistan. The claims made by The Resistance Front and their reposting by known social media handles of the Lashkar-e-Taiba speak for themselves. Identification of the attackers, based on eyewitness accounts, as well as other information available to law enforcement agencies, has also progressed. Our intelligence has developed an accurate picture of the planners and backers of this team.
+The features of this attack also tie in with Pakistan's long track record of perpetrating cross-border terror in India, which is well documented, and beyond question. Pakistan also has a well-deserved reputation as a haven for terrorists from around the world, with internationally proscribed terrorists enjoying impunity there. In addition, Pakistan has been known to wilfully mislead the world and international forums, such as the Financial Action Task Force, on this issue. The Sajid Mir case, in which this terrorist was declared dead and then, in response to international pressure, brought back to life, found alive and arrested, is the most glaring example.
+The latest attack in Pahalgam has understandably generated deep anger in Jammu and Kashmir, and in other parts of India. Following the attacks, the Government of India naturally responded with a set of initial measures relating to our engagement with Pakistan. You are all aware of the decisions that were announced on the 23rd of April.
+However, it was deemed essential that the perpetrators and planners of the 22nd April attack be brought to justice. Despite a fortnight having passed since the attacks, there has been no demonstrable step from Pakistan to take action against the terrorist infrastructure on its territory or on territory under its control. Instead, all it has indulged in are denials and allegations. Our intelligence monitoring of Pakistan-based terrorist modules indicated that further attacks against India were impending. There was thus a compulsion both to deter and to pre-empt.
+Earlier this morning as you would be aware India exercised its right to respond and pre-empt as well as deter more such cross-border attacks. These actions were measured, non-escalatory, proportionate, and responsible. They focused on dismantling the terrorist infrastructure and disabling terrorists likely to be sent across to India.
+You would also recall that the Security Council on 25th April 2025 had issued a Press Statement on the Pahalgam terror attack, underlining, and I quote, "The need to hold perpetrators, organisers, financiers and sponsors of this reprehensible act of terrorism accountable and bring them to justice”. India's latest actions should be seen in this context.
+Joining me for this briefing on our actions earlier this morning are Colonel Sofia Qureshi and Wing Commander Vyomika Singh. I will request them to share some details regarding OPERATION SINDOOR with all of you.
+</p>
+                </div>
+              </div>
+              <div class="heading px-2">
+                <h3 class="fs-3 ms-3">Leave A Comment</h3>
+              </div>
+              <div class="contact-form ms-3 mt-3 pb-4 px-2">
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="Name"
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="E-mail"
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="Mobile No."
+                  />
+                </div>
+                <div class="mb-3">
+                  <textarea
+                    class="form-control"
+                    id="exampleFormControlTextarea1"
+                    placeholder="Message"
+                    rows="5"
+                  ></textarea>
+                </div>
+                <button class="c-btn h-btn mt-3 py-2 px-4 rounded-pill">
+                  Submit
+                </button>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              
+                <button type="button" class="btn-c rounded-pill" data-bs-dismiss="modal"><i class="bi bi-x-circle-fill"></i></button>
+              
+              <div class="modal-body px-4">
+                <div class="img">
+                  <img src="images/currency-converter.png" class="img-fluid" alt="">
+                </div>
+                <div class="content mt-3">
+                  <small>Himanshu Arya </small
+                    ><span class="text-muted ms-2 ms-md-0">Sept 29,2016</span>
+                  <h4 class="card-title mt-3">Surgical Strike</h4>
+                  <div class="social-links mt-4">
+                      <button href="" class="rounded-pill dribble">
+                        <i class="bi bi-dribbble"></i>
+                      </button>
+                      <button href="" class="rounded-pill whatsapp">
+                        <i class="bi bi-whatsapp"></i>
+                      </button>
+                      <button href="" class="rounded-pill behance">
+                        <i class="bi bi-behance"></i>
+                      </button>
+                  </div>
+                  <p class="text-muted mt-3">The Surgical Strike was a significant military operation conducted by the Indian Army on the night of September 29, 2016, across the Line of Control (LoC) in Pakistan-occupied Kashmir (PoK). This covert operation was carried out in response to the deadly Uri attack on September 18, 2016, where 19 Indian soldiers were killed by terrorists. The attack exposed the rising threat of cross-border terrorism and necessitated a strong and precise response.
+
+The operation was meticulously planned and executed by India’s elite special forces, including the Para Special Forces and the National Security Guard (NSG). Under the cover of darkness, these commandos crossed the LoC, infiltrated terrorist launch pads, and destroyed multiple terrorist camps used for training, planning, and launching attacks inside India.
+
+The operation was characterized by stealth, speed, and precision. Indian forces targeted key terrorist infrastructure, killing a significant number of militants and inflicting heavy damage on their operational capabilities. Importantly, the strike was designed to minimize collateral damage and avoid escalation into a full-scale war.
+
+The Surgical Strike was publicly acknowledged by the Indian government for the first time on September 29, 2016, with the then Army Chief General Dalbir Singh and later by Prime Minister Narendra Modi in a public address. The operation was hailed domestically and internationally as a decisive and bold response to terrorism.
+
+This operation demonstrated India’s resolve to counter terror threats with firmness and capability. It boosted the morale of the armed forces and the nation, showcasing India’s ability to carry out precise military actions while maintaining strategic restraint.
+
+The Surgical Strike remains a landmark moment in India’s defense history, symbolizing courage, tactical brilliance, and the commitment of Indian soldiers to safeguard the country’s sovereignty.</p>
+                </div>
+              </div>
+              <div class="heading px-2">
+                <h3 class="fs-3 ms-3">Leave A Comment</h3>
+              </div>
+              <div class="contact-form ms-3 mt-3 pb-4 px-2">
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="Name"
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="E-mail"
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="Mobile No."
+                  />
+                </div>
+                <div class="mb-3">
+                  <textarea
+                    class="form-control"
+                    id="exampleFormControlTextarea1"
+                    placeholder="Message"
+                    rows="5"
+                  ></textarea>
+                </div>
+                <button class="c-btn h-btn mt-3 py-2 px-4 rounded-pill">
+                  Submit
+                </button>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              
+                <button type="button" class="btn-c rounded-pill" data-bs-dismiss="modal"><i class="bi bi-x-circle-fill"></i></button>
+              
+              <div class="modal-body px-4">
+                <div class="img">
+                  <img src="images/dictionary.png" class="img-fluid" alt="">
+                </div>
+                <div class="content mt-3">
+                  <small>Himanshu arya </small
+                    ><span class="text-muted ms-2 ms-md-0"> June 5, 1984</span>
+                  <h4 class="card-title mt-3">Operation Blue Star</h4>
+                  <div class="social-links mt-4">
+                      <button href="" class="rounded-pill dribble">
+                        <i class="bi bi-dribbble"></i>
+                      </button>
+                      <button href="" class="rounded-pill whatsapp">
+                        <i class="bi bi-whatsapp"></i>
+                      </button>
+                      <button href="" class="rounded-pill behance">
+                        <i class="bi bi-behance"></i>
+                      </button>
+                  </div>
+                  <p class="text-muted mt-3">Operation Blue Star was a military operation carried out by the Indian Army in June 1984, under the orders of then Prime Minister Indira Gandhi. Its primary objective was to remove militant Sikh leader Jarnail Singh Bhindranwale and his armed followers from the Harmandir Sahib Complex (Golden Temple) in Amritsar, Punjab. Bhindranwale and his group had fortified the temple, turning it into a base for extremist activities and demanding a separate Sikh state, Khalistan.
+
+The operation was launched between June 1 and June 8, 1984, with the main assault taking place on the night of June 5–6. The Indian Army deployed tanks, artillery, and elite commandos from units such as Para SF. The operation involved intense close-quarters combat inside one of the holiest shrines of Sikhism, which led to heavy casualties and significant damage to the Akal Takht, a sacred Sikh building.
+Official reports estimate over 500 militants and civilians died, while around 83 army personnel lost their lives. However, independent estimates suggest the death toll was much higher. The operation deeply hurt the sentiments of the Sikh community worldwide due to the desecration of the holy site.
+Operation Blue Star had far-reaching consequences. It sparked widespread anger and unrest among Sikhs, both in India and abroad. In retaliation, Prime Minister Indira Gandhi was assassinated by her Sikh bodyguards on October 31, 1984. This triggered anti-Sikh riots across India, especially in Delhi, resulting in thousands of Sikh deaths and displacements.
+The operation remains one of the most controversial and sensitive chapters in Indian history. While the government viewed it as necessary to curb separatism, many Sikhs saw it as an attack on their faith. The legacy of Operation Blue Star continues to influence Indian politics and Sikh sentiments to this day.</p>
+                </div>
+              </div>
+              <div class="heading px-2">
+                <h3 class="fs-3 ms-3">Leave A Comment</h3>
+              </div>
+              <div class="contact-form ms-3 mt-3 pb-4 px-2">
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="Name"
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="E-mail"
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="Mobile No."
+                  />
+                </div>
+                <div class="mb-3">
+                  <textarea
+                    class="form-control"
+                    id="exampleFormControlTextarea1"
+                    placeholder="Message"
+                    rows="5"
+                  ></textarea>
+                </div>
+                <button class="c-btn h-btn mt-3 py-2 px-4 rounded-pill">
+                  Submit
+                </button>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- blog section ends here -->
+
+    <!-- contact section starts -->
+    <section class="contact py-5" id="contact">
+      <div class="heading text-center">
+        <small>Get in Touch</small>
+        <h3>Any Questions? Feel Free to Contact</h3>
+      </div>
+      <div class="row justify-content-evenly mt-5">
+        <div class="col-md-5 col-10 contact-details" data-aos="slide-right">
+          <div class="row justify-content-evenly">
+            <div class="col-1">
+              <i class="bi bi-geo-alt-fill"></i>
+            </div>
+            <div class="col-11">
+              <p>Sector 22, Noida, Uttar Pradesh, India</p>
+            </div>
+          </div>
+          <div class="row justify-content-evenly">
+            <div class="col-1">
+              <i class="bi bi-telephone-fill"></i>
+            </div>
+            <div class="col-11">
+              <p>+91 9536045123</p>
+            </div>
+          </div>
+          <div class="row justify-content-evenly">
+            <div class="col-1">
+              <i class="bi bi-send-fill"></i>
+            </div>
+            <div class="col-11">
+              <p>himanshuaryajaspur111@gmail.com</p>
+            </div>
+          </div>
+         
+        </div>
+        <div class="col-md-5 col-10 mt-3 mt-md-0" data-aos="slide-left">
+          <div class="contact-form">
+            <div class="mb-3">
+              <input
+                type="text"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="Name"
+              />
+            </div>
+            <div class="mb-3">
+              <input
+                type="email"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="E-mail"
+              />
+            </div>
+            <div class="mb-3">
+              <input
+                type="text"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="Mobile No."
+              />
+            </div>
+            <div class="mb-3">
+              <textarea
+                class="form-control"
+                id="exampleFormControlTextarea1"
+                placeholder="Message"
+                rows="5"
+              ></textarea>
+            </div>
+            <button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">
+              Submit
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- contact section ends here -->
+
+      <!-- now we will make back to top button when user click on it it will be redirected to top page  -->
+    <button
+      type="button"
+      class="btn btn-floating btn-lg rounded-pill"
+      id="btn-back-to-top"
+    >
+      <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- footer section starts  -->
+    <footer class="text-center text-muted py-4">
+      <h3 class="text-white pt-4" data-aos="fade-up">Portfolio</h3>
+      <div class="link-group mt-5" data-aos="fade-up">
+        <a href="#home">Home</a>
+        <div class="vr"></div>
+        <a href="#about">About</a>
+        <div class="vr"></div>
+        <a href="#service">Service</a>
+        <div class="vr"></div>
+        <a href="#portfolio">Portfolio</a>
+        <div class="vr"></div>
+        <a href="#blog">Blog</a>
+        <div class="vr"></div>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="social-links mt-5" data-aos="fade-up">
+        <button href="" class="rounded-pill dribble">
+          <i class="bi bi-dribbble"></i>
+        </button>
+        <button href="" class="rounded-pill whatsapp">
+          <i class="bi bi-whatsapp"></i>
+        </button>
+        <button href="" class="rounded-pill behance">
+          <i class="bi bi-behance"></i>
+        </button>
+      </div>
+      <hr class="text-muted my-4" />
+
+      <p>Copyright 2022 Portfolio | All Rights Reserved.</p>
+    </footer>
+    <!-- footer section ends here -->
+
+      <!-- bootstrap javascript cdn link  -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- AOS library javascript link  -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      // initializing AOS library
+      AOS.init({
+        duration: 1000,
+        offset: 50,
+      });
+    </script>
+    <!-- custom js file linking -->
+    <script src="script.js"></script>
+    
+  </body>
+</html>
